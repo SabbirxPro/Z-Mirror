@@ -292,9 +292,9 @@ if len(USER_SESSION_STRING) != 0:
             TELEGRAM_HASH,
             session_string=USER_SESSION_STRING,
             no_updates=True,
-            app_version="@Z_Mirror Session",
-            device_model="@Z_Mirror Bot",
-            system_version="@Z_Mirror Server",
+            app_version="@MirrorCloudBD Session",
+            device_model="@MirrorCloudBD Bot",
+            system_version="@MirrorCloudBD Server",
         ).start()
         IS_PREMIUM_USER = user.me.is_premium # type: ignore
         log_info(f"Successfully logged into @{user.me.username} DC: {user.session.dc_id}.") # type: ignore
@@ -1150,7 +1150,7 @@ if GDRIVE_ID:
     DRIVES_IDS.append(GDRIVE_ID)
     INDEX_URLS.append(INDEX_URL)
 
-KEY = ("@Z_Mirror")
+KEY = ("@MirrorCloudBD")
 
 if ospath.exists("list_drives.txt"):
     with open(
@@ -1272,9 +1272,9 @@ bot = tgClient(
     TELEGRAM_API,
     TELEGRAM_HASH,
     bot_token=BOT_TOKEN,
-    app_version="@Z_Mirror Session",
-    device_model="@Z_Mirror Bot",
-    system_version="@Z_Mirror Server",
+    app_version="@MirrorCloudBD Session",
+    device_model="@MirrorCloudBD Bot",
+    system_version="@MirrorCloudBD Server",
     workers=99999,
 ).start()
 
